@@ -3,7 +3,7 @@
 // Given a word, write an algorithm that returns the sequence of a specific character
 // that appears the most in sequence. If there are many of them, return the first character.
 // Big-O Time: O(n), Space: O(1)
-const solutionChallengeOne = (text) => {
+const getLongestCharSequence = (text) => {
     if (!text) return null
 
     let char = null
@@ -31,4 +31,4 @@ const solutionChallengeOne = (text) => {
     return startIndex === -1 ? text[0] : text.substr(startIndex, maxCount)
 }
 
-export { solutionChallengeOne }
+export { getLongestCharSequence }

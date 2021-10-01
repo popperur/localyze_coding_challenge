@@ -1,18 +1,18 @@
-import { solutionChallengeOne } from './solution'
+import { getLongestCharSequence } from './solution'
 
-test('Tests the solution for Challenge One', () => {
+test('Tests for Challenge One', () => {
 
-    expect(solutionChallengeOne('Pressuuuuuure')).toBe('uuuuuu')
-    expect(solutionChallengeOne('Boat')).toBe('B')
-    expect(solutionChallengeOne('A hot  dog')).toBe('  ')
+    expect(getLongestCharSequence('Pressuuuuuure')).toBe('uuuuuu')
+    expect(getLongestCharSequence('Boat')).toBe('B')
+    expect(getLongestCharSequence('A hot  dog')).toBe('  ')
 
-    expect(solutionChallengeOne('Pressure')).toBe('ss')
-    expect(solutionChallengeOne('Pressuure')).toBe('P')
-    expect(solutionChallengeOne('Pressureee')).toBe('eee')
-    expect(solutionChallengeOne('aab')).toBe('aa')
-    expect(solutionChallengeOne('aabb')).toBe('a')
-    expect(solutionChallengeOne('   ')).toBe('   ')
-    expect(solutionChallengeOne('x')).toBe('x')
-    expect(solutionChallengeOne('')).toBe(null)
+    expect(getLongestCharSequence('Pressure')).toBe('ss')
+    expect(getLongestCharSequence('Pressuure')).toBe('P')
+    expect(getLongestCharSequence('Pressureee')).toBe('eee')
+    expect(getLongestCharSequence('aab')).toBe('aa')
+    expect(getLongestCharSequence('aabb')).toBe('a')
+    expect(getLongestCharSequence('   ')).toBe('   ')
+    expect(getLongestCharSequence('x')).toBe('x')
+    expect(getLongestCharSequence('')).toBe(null)
 
 })

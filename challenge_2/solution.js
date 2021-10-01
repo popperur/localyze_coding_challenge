@@ -2,7 +2,7 @@
 
 // Given a set of numbers, find the subset in which the sum of the elements is the maximum sum.
 // Big-O Time: O(n), Space: O(1)
-const solutionChallengeTwo = (numbers) => {
+const getMaxSubArrayIndices = (numbers) => {
     if (!numbers || numbers.length === 0) throw new Error('The numbers array must have at least one element.')
 
     const size = numbers.length
@@ -32,4 +32,4 @@ const solutionChallengeTwo = (numbers) => {
     return [maxTotalStartIndex, maxTotalEndIndex]
 }
 
-export { solutionChallengeTwo }
+export { getMaxSubArrayIndices }

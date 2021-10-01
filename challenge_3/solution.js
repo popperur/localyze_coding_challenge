@@ -8,7 +8,7 @@
 // - text consists of only English letters and spaces ' '.
 // - There will be at least one word in text.
 // Big-O Time: O(n), Space: O(1)
-const solutionChallengeThree = (text) => {
+const getLastWordLength = (text) => {
     if (!text) throw new Error('Text must be at least 1 character long.')
 
     const size = text.length
@@ -28,4 +28,4 @@ const solutionChallengeThree = (text) => {
     return lastWordLength
 }
 
-export { solutionChallengeThree }
+export { getLastWordLength }

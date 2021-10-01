@@ -1,15 +1,15 @@
-import { solutionChallengeThree } from './solution'
+import { getLastWordLength } from './solution'
 
-test('Tests for the solution for Challenge Three', () => {
+test('Tests for Challenge Three', () => {
 
-    expect(solutionChallengeThree('Hello World')).toBe(5)
-    expect(solutionChallengeThree(' fly me   to   the moon  ')).toBe(4)
-    expect(solutionChallengeThree('luffy is still joyboy')).toBe(6)
+    expect(getLastWordLength('Hello World')).toBe(5)
+    expect(getLastWordLength(' fly me   to   the moon  ')).toBe(4)
+    expect(getLastWordLength('luffy is still joyboy')).toBe(6)
 
-    expect(solutionChallengeThree('T')).toBe(1)
+    expect(getLastWordLength('T')).toBe(1)
 
     expect(() => {
-        solutionChallengeThree('')
+        getLastWordLength('')
     }).toThrow('Text must be at least 1 character long.')
 
 })
