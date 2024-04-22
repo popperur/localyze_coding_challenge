@@ -1,6 +1,6 @@
 # Localyze Coding Challenge
 
-This repo contains the solutions and tests for the [Localyze coding challenge](https://gist.github.com/rui-localyze/eefd72d3549b286394f9adce4ac79770).
+This repo contains the solutions and tests for the [Localyze coding challenge](docs/code_challenge.md) .
 
 ## How to use
 
